@@ -1,0 +1,97 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+header div{
+    display: flex;
+    background-color: rgb(10, 47, 77);
+    padding: 30px 0;
+    width: 100%;
+    margin-top: 10px;
+}
+main{
+    display: flex;
+    width: 100%;
+    background-color: rgb(175, 175, 87);
+    padding: 70px 0;
+    margin-top: 10px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+section div{
+    display: flex;
+    background-color: rgb(197, 197, 214);
+    width: 100%;
+    padding: 70px 0;
+    margin-top: 10px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+footer div{
+    display: flex;
+    background: lightgray;
+    width: 100%;
+    padding: 70px 0;
+    margin-top: 10px;
+}
+@media screen and (max-width:1024px) {
+    header{
+        flex-direction: column;
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    section{
+        flex-direction: column;
+    }
+       section div{
+        width: 100% ;  
+    }
+      footer{
+        flex-wrap: wrap;
+    }
+       footer div{
+        width: calc(50% - 10px);
+    }
+}
+@media screen and (max-width:768px) {
+    header{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    section{
+        flex-direction: column;
+    }
+    section div{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        width: 203%;
+    }
+    footer div{
+        flex-direction: column;
+        width: calc(50% - 10px);
+    }
+}
